@@ -1,0 +1,10 @@
+ggplot(data_analytics, aes(y = log(v005_race_black), x = log(v161_race_black)))+
+  geom_point(color="gray", alpha =0.5)+
+  geom_smooth()+
+  xlab(paste("Suicides (BLACK)")) +
+  ylab("Preventable Hospital Stays (BLACK)")+
+  theme(panel.background = element_rect(fill = "black"),
+        plot.background = element_rect(fill = "black"),
+        panel.grid.major = element_line(color = "white", size = 0.1),
+        panel.grid.minor = element_line(color = "white", size = 0.03),
+        text = element_text(color = "white"))
